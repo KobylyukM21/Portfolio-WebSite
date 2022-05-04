@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--- Makes the webpage adjust to diffrent devices -->
+        <title>Maksim Kobylyuk</title>
+        <link rel="stylesheet" href="../Portfolio Website/style/css/MainPageCSS.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> <!--- Fonts for website -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Link to Icons for 
+        menu -->
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="MainPage.html"><img src="../Portfolio Website/style/images/MKLogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i> <!--- Hides the menu bars when its on mobile view -->
+                    <ul>
+                        <li><a href="MainPage.html">HOME</a></li>
+                        <li><a href="SkillsPage.html">SKILLS</a></li>
+                        <li><a href="">EXPERIENCE</a></li>
+                        <li><a href="">PROJECTS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"onclick="showMenu()"></i> <!--- Shows the menu bars when its on mobile view -->
+            </nav>
+        </section>
+    </body>
+
+     <!-------- JavaScript for Toggle Menu -------->
+     <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0"; /* Sets right to 0 causing the menu bar to appear in mobile view */
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px"; /* Sets right to -200 causing the menu bar to disappear in mobile view */
+        }
+    </script>
+</html>
